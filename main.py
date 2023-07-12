@@ -1,3 +1,5 @@
+#Задача 1
+
 cook_book = {}
 
 with open('menu.txt', 'r', encoding='utf-8') as cook:
@@ -24,6 +26,8 @@ with open('menu.txt', 'r', encoding='utf-8') as cook:
         cook_book[dish] = ingredients
 
 print(cook_book)
+
+#задача 2
 
 cook_book = {
     'Омлет': [
@@ -62,4 +66,22 @@ def get_shop_list_by_dishes(dishes, person_count):
 
 kaka = get_shop_list_by_dishes(['Омлет', 'Утка по-пекински'], 2)
 print(kaka)
+
+#Задача 3
+
+with open('1.txt', 'r', encoding='utf-8') as txt1:
+    i = 0
+    for t1, t1_1 in enumerate(txt1):
+        i += 1
+    print(i)
+with open('2.txt', 'r', encoding='utf-8') as txt2:
+    g = 0
+    for t2, t2_2 in enumerate(txt2):
+        g += 1
+    print(g)
+
+with open('3.txt', 'w', encoding='utf-8') as yes:
+    if t1 > t2:
+        yes.write(f'2.txt\n{g}\n{t2_2}\n')
+        yes.write(f'1.txt\n{i}\n{t1_1}')
 
